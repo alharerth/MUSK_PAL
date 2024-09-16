@@ -1,0 +1,27 @@
+body{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.navList{
+    list-style-type: disclosure-closed;
+}
+.navList li{
+    margin-bottom: 15px;
+}
+.navList a{
+    
+        color: inherit;
+        text-decoration: none;
+        
+    
+}
+#travel{
+    float: right;
+    background-color: black;
+    border-color: black;
+    margin-top: 5px;
+    padding: 3px;
+}
+#tr{
+    color: #FFD700;
+}
