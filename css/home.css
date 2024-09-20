@@ -1,6 +1,17 @@
 body{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#tr{
+    color: #333;
+}
+#nav img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+#nav{
+    background-color:#F7E7CE;
 }
 .navList{
     list-style-type: disclosure-closed;
@@ -17,11 +28,29 @@ body{
 }
 #travel{
     float: right;
-    background-color: black;
-    border-color: black;
-    margin-top: 5px;
+    background-color: #F7E7CE;
+    border-color: #F7E7CE;
+    margin-top: 10px;
     padding: 3px;
+    z-index: 2;
+    position: relative;
 }
-#tr{
-    color: #FFD700;
+.ph{
+    height: 650px;
+    width: 90%;
+    margin: auto;
+}
+#cont{
+    background-color: #EAE2D5;
+
+}
+#foot{
+    background-color: #EAE2D5;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#foot a{
+    text-decoration: none;
+    color: #333;
 }
