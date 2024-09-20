@@ -3,7 +3,7 @@ body{
     margin-right: 1%;
 }
 #tr{
-    color: #333;
+    color: #ffffff;
 }
 #nav img{
     width: 70px;
@@ -11,7 +11,7 @@ body{
     border-radius: 100%;
 }
 #nav{
-    background-color:#F7E7CE;
+    background-color:#654d3f;
 }
 .navList{
     list-style-type: disclosure-closed;
@@ -28,8 +28,8 @@ body{
 }
 #travel{
     float: right;
-    background-color: #F7E7CE;
-    border-color: #F7E7CE;
+    background-color: #654d3f;
+    border-color: #654d3f;
     margin-top: 10px;
     padding: 3px;
     z-index: 2;
@@ -41,11 +41,11 @@ body{
     margin: auto;
 }
 #cont{
-    background-color: #EAE2D5;
+    background-color: #fcfcf4;
 
 }
 #foot{
-    background-color: #EAE2D5;
+    background-color: #fcfcf4;
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
