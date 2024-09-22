@@ -81,14 +81,6 @@ body{
     font-weight: bold;
     margin-top: 10px;
 }
-
-#shipping-fee {
-    color: green;
-}
-
-#final-total {
-    color: red;
-}
 #foot{
     background-color: #fcfcf4;
     padding: 20px;
