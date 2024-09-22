@@ -60,17 +60,14 @@ body{
 .card{
     width: auto;
     background-color: white;
-    margin-bottom: 10px;
-    /*background:none;*/
-    /*color: #fcfcf4;*/
-}
+    margin-bottom: 10px;}
 .card-body{
     padding-left: 0%;
     padding-top: 0%;
     padding-right: 0%;
 }
 .container{
-   /* background: none;*/
+   
    background-color: #fcfcf4;
 }
 .ca{
@@ -91,14 +88,14 @@ body{
     border-radius: 0 5% 0 70%;
 }
 #myButton {
-    background: none;        /* Remove background */
-    border: none;           /* Remove border */
-    padding: 0;             /* Remove padding */
-    margin: 0;              /* Remove margin */
-    color: inherit;         /* Inherit text color from parent */
-    font: inherit;          /* Inherit font properties */
-    cursor: pointer;        /* Keep the pointer cursor */
-    text-align: left;       /* Align text to the left */
+    background: none;   
+    border: none;  
+    padding: 0;     
+    margin: 0;     
+    color: inherit;        
+    font: inherit;          
+    cursor: pointer;        
+    text-align: left;       
 }
 .cart-icon a{
     text-decoration: none;

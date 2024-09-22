@@ -1,33 +1,64 @@
-// Function to update the cart count
+
 function updateCartCount() {
     const cartCount = localStorage.getItem('cartCount') || 0;
     document.getElementById('cartCount').innerText = cartCount;
 }
 
-// Initialize the cart count on page load
+
 window.onload = function() {
     updateCartCount();
 };
 document.addEventListener('DOMContentLoaded', function() {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cart = document.getElementById('cart');
+    const cont = document.getElementById('cont');
+    const totalPriceElement = document.getElementById('tprice'); 
+    const shippingFeeElement = document.getElementById('shipping-fee'); 
+    const finalTotalElement = document.getElementById('final-total'); 
+    const checkoutButton = document.getElementById('checkout-button');
+    const lfDiv = document.getElementById('lf'); 
+    let totalPrice = 0; 
+    const shippingFee = 5; 
 
     if (cartItems.length > 0) {
         cartItems.forEach(item => {
             const cartItemElement = document.createElement('div');
-           //cartItemElement.className = 'col-md-4 col-sm-6 mb-4 d-flex'; // Add d-flex for flexbox
             cartItemElement.innerHTML = `
-                <div class="card"><!-- Use flex-fill to make cards equal height -->
+                <div class="card">
                     <div class="card-body">
-                    <img src="${item.image}" class="card-img-top" alt="...">
-                        <p class="card-text">product ${item.info}</p>
-                        <span class="price"> ${item.price}</span>
+                        <img src="${item.image}" class="card-img-top" alt="...">
+                        <p class="card-text">Product: ${item.info}</p>
+                        <span class="price">$${item.price}</span>
                     </div>
                 </div>
             `;
             cart.appendChild(cartItemElement);
+
+            totalPrice += parseFloat(item.price); 
+        });
+
+        const totalWithShipping = totalPrice + shippingFee;
+
+        totalPriceElement.innerHTML = `Subtotal: $${totalPrice.toFixed(2)}`; // Format to 2 decimal places
+        shippingFeeElement.innerHTML = `Shipping Fee: $${shippingFee.toFixed(2)}`;
+        finalTotalElement.innerHTML = `Total: $${totalWithShipping.toFixed(2)}`; // Format to 2 decimal places
+
+        checkoutButton.style.display = 'block'; 
+        lfDiv.style.display = 'inline-block'; 
+
+        checkoutButton.addEventListener('click', function() {
+            console.log('Proceeding to checkout...');
         });
     } else {
-        cart.innerHTML = "<p>Your cart is empty.</p>";
+        cont.innerHTML = '<img src="/media/Daco_5212497.png" alt="..." class="ci" id="ci1">';
+        totalPriceElement.innerHTML = ""; 
+        shippingFeeElement.innerHTML = "";
+        finalTotalElement.innerHTML = ""; 
+
+        
+        checkoutButton.style.display = 'none'; 
+        lfDiv.style.display = 'none'; 
     }
 });
+
+

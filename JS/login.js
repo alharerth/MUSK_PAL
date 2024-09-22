@@ -41,7 +41,6 @@ function storeDataAndRedirect() {
         phoneNumber: document.getElementById('pn').value
     };
 
-    // Perform some checking logic (example: check if email is valid)
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(mail.value)) {
         
@@ -63,18 +62,13 @@ function storeDataAndRedirect() {
         rep.style.color='red'
         return
     }
-    // Get existing data from local storage or create a new array
     let existingData = JSON.parse(localStorage.getItem('userSubmissions')) || [];
     
-    // Add the new submission
     existingData.push(userData);
     
-    // Save the updated array back to local storage
     localStorage.setItem('userSubmissions', JSON.stringify(existingData));
     
-    // Redirect to another page (e.g., success.html)
-    window.location.href = 'home.html'; // Change this to your desired page
+    window.location.href = 'home.html';
 }
 
-// Event listener for the submit button
 loginButton.addEventListener('click', storeDataAndRedirect);

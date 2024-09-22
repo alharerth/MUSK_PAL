@@ -40,9 +40,55 @@ body{
     
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+.rightd{
+    width: 66%;
+    display: inline-block;
+}
+.leftd{
+    width: 33%;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    right: 35px;
+    bottom: 50px;
+}
+.leftd{
+    text-align: center;
+    border-radius: 10px;
+    border: #333 solid 0.7px;
+}
+.bol{
+    font-weight: bolder;
+}
+#checkout-button {
+    background-color: #654d3f; 
+    color: #fcfcf4;
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 20px; 
+    margin: 10px auto 5px auto;
+}
+.card {
+    margin-bottom: 15px;
 }
 
+#tprice, #shipping-fee, #final-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
+#shipping-fee {
+    color: green;
+}
+
+#final-total {
+    color: red;
+}
 #foot{
     background-color: #fcfcf4;
     padding: 20px;
@@ -53,7 +99,7 @@ body{
     text-decoration: none;
     color: #333;
 }
-#cont img{
+.row img{
     width: 100%;
     height: 370px;
 }
@@ -61,8 +107,6 @@ body{
     width: auto;
     background-color: white;
     margin-bottom: 10px;
-    /*background:none;*/
-    /*color: #fcfcf4;*/
 }
 .card-body{
     padding-left: 0%;
@@ -70,7 +114,6 @@ body{
     padding-right: 0%;
 }
 .container{
-   /* background: none;*/
    background-color: #fcfcf4;
 }
 .ca{
@@ -91,14 +134,20 @@ body{
     border-radius: 0 5% 0 70%;
 }
 #myButton {
-    background: none;        /* Remove background */
-    border: none;           /* Remove border */
-    padding: 0;             /* Remove padding */
-    margin: 0;              /* Remove margin */
-    color: inherit;         /* Inherit text color from parent */
-    font: inherit;          /* Inherit font properties */
-    cursor: pointer;        /* Keep the pointer cursor */
-    text-align: left;       /* Align text to the left */
+    background: none;       
+    border: none;      
+    padding: 0;         
+    margin: 0;         
+    color: inherit;         
+    font: inherit;          
+    cursor: pointer;        
+    text-align: left;       
+}
+.ci{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
 }
 .cart-icon a{
     text-decoration: none;
@@ -127,7 +176,7 @@ body{
 }
 .row{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
 }
 .container{
     display: block;
@@ -145,5 +194,11 @@ body{
 @media screen and (max-width:768px){
     .row{
         grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:400px){
+    #cont img{
+        width: 100%;
+
     }
 }
