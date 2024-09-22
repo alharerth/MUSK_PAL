@@ -26,6 +26,7 @@ body{
         
     
 }
+
 #travel{
     float: right;
     background-color: #654d3f;
@@ -53,4 +54,25 @@ body{
 #foot a{
     text-decoration: none;
     color: #333;
+}
+.cart-icon a{
+    text-decoration: none;
+    color: #333;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    bottom: 8px;
+    left: 20px;
+}
+.cart-count {
+    position: relative;
+    top: -13px;
+    right: 13px;
+    background-color: #654d3f;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 10px;
 }
