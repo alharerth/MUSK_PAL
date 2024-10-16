@@ -70,6 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         localStorage.setItem('cart', JSON.stringify(updatedCartItems));
         
+        let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+        cartCount--;
+        localStorage.setItem('cartCount', cartCount);
+        updateCartCount();
         cartItems.length = 0; 
         cartItems.push(...updatedCartItems); 
         
