@@ -47,7 +47,7 @@ body{
     display: inline-block;
 }
 .leftd{
-    width: 33%;
+    width: 25%;
     position: absolute;
     display: inline-block;
     background-color: white;
@@ -80,6 +80,24 @@ body{
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
+}
+.traash{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.trbu{
+        background: none;       
+        border: none;      
+        padding: 0;         
+        margin: 0;         
+        color: inherit;         
+        font: inherit;          
+        cursor: pointer;        
+        text-align: left;       
+}
+.card{
+    position: relative;
 }
 #foot{
     background-color: #fcfcf4;

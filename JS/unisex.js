@@ -13,6 +13,7 @@ function adDToCart(productId) {
     const productCard = document.getElementById(productId);
     
     const product = {
+        id:productId,
         image: productCard.querySelector('img').src,
         info: productCard.querySelector('p').innerText,
         price: productCard.querySelector('span').innerText,
