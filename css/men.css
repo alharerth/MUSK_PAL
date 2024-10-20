@@ -3,19 +3,44 @@ body{
     margin-right: 1%;
 }
 #tr{
-    color: white;
+    color: #ffffff;
 }
 #nav img{
     width: 70px;
     height: 70px;
     border-radius: 100%;
 }
-#nav{
-    background-color:#654d3f;
+#cont{
+    padding-top: 100px;
+}
+.naame{
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+}
+.card-text{
+    font-family: serif;
+    font-size: 20px;
+}
+.price{
+    text-align: center;
+    font-weight: bolder;
+}
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #654d3f; /* Background color */
+   /* color: white;  Text color */
+    transition: top 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
 }
 .navList{
     list-style-type: disclosure-closed;
 }
+
 .navList li{
     margin-bottom: 15px;
 }
@@ -37,7 +62,6 @@ body{
 }
 #cont{
     background-color: #fcfcf4;
-    
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,48 +78,36 @@ body{
     color: #333;
 }
 #cont img{
-    width: 100%;
     height: 370px;
 }
 .card{
     width: auto;
-    background-color: white;
-    margin-bottom: 10px;
+    background-color: #efefe6;
+    margin-bottom: 30px;
+    flex-direction: row;
+    align-items: center;
+    border: #efefe6;
 }
 .card-body{
     padding-left: 0%;
     padding-top: 0%;
     padding-right: 0%;
+    width: 50%;
+    display: inline-block;
+    flex: 1;
+    text-align: -webkit-center;
 }
 .container{
    background-color: #fcfcf4;
 }
 .ca{
     position: relative;
+    border-radius: 30px 30px 30px 30px;
 }
 .heart{
     position: absolute;
     z-index: 1;
     color: #fcfcf4;
-}
-.ha{
-    top: 0px;
-    right: 0px;
-}
-.heart{
-    padding: 20px 35px;
-    background-color: #654d3f;
-    border-radius: 0 5% 0 70%;
-}
-#myButton {
-    background: none;       
-    border: none;      
-    padding: 0;         
-    margin: 0;         
-    color: inherit;         
-    font: inherit;          
-    cursor: pointer;        
-    text-align: left;       
 }
 .cart-icon a{
     text-decoration: none;
@@ -118,29 +130,99 @@ body{
     padding: 3px 7px;
     font-size: 10px;
 }
-.price{
-    text-align: center;
-    font-weight: bold;
+
+.col img{
+    width: 50%;
+    border-radius: 30px 0 0 30px;
+}
+.rev img{
+    border-radius: 0 30px 30px 0;
 }
 .row{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display:flex;
+    flex-direction: column;
 }
 .container{
     display: block;
 }
-@media screen and (min-width:1248px){
-    .card{
-        width: 416px;
+.rev{
+    flex-direction: row-reverse;
+}
+.addtc{
+    background-color: #654d3f; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: block;
+    margin-top: 10px;
+
+}
+.addtc:hover{
+    background-color: #7a5b4e; /* Lighter shade on hover */
+}
+@media screen and (min-width:823px){
+    .col img{
+        width: 450px;
     }
 }
-@media screen and (max-width:992px){
-    .row{
-        grid-template-columns: auto auto;
+
+@media (max-width: 992px) {
+    .container, .container-md, .container-sm {
+        max-width: 100%;
     }
 }
-@media screen and (max-width:768px){
-    .row{
-        grid-template-columns: auto;
+@media (max-width: 675px) {
+    .naame{
+        
+        font-size: 20px;
+        
     }
+    .card-text{
+        
+        font-size: 17px;
+    }
+    .price{
+        font-size: 16px; 
+    }
+}
+.dm{
+    background: none;
+    border: none;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+}
+.cl{
+    background: none;
+    border: none;
+}
+
+
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    /* Light text color */
+}
+
+body.dark-mode #cont {
+    background-color: #1e1e1e; /* Darker content background */
+}
+body.dark-mode .row {
+    background-color: #1e1e1e; /* Darker content background */
+}
+body.dark-mode .offcanvas {
+    background-color: #1e1e1e; /* Darker content background */
+}
+
+body.dark-mode #foot {
+    background-color: #1e1e1e; /* Darker footer background */
+}
+
+body.dark-mode #foot,body.dark-mode #foot a,body.dark-mode .bi,body.dark-mode .offcanvas,body.dark-mode .cl {
+    color:#efefe6; /* Darker travel button */
 }

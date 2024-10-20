@@ -18,8 +18,9 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasRightLabel">Navigation Center</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-</div>
+    <button type="button" class="cl" data-bs-dismiss="offcanvas" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+      <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+    </svg></button></div>
 <div class="offcanvas-body">
     <ul class="navList">
         <li><a href="men.html">men</a></li>
@@ -35,118 +36,79 @@
       </svg></a>
     <span class="cart-count" id="cartCount">0</span>
 </div>
+<button id="toggleDarkMode" class="dm"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+</svg></button>
 </div>
         </div>
         <div id="cont">
             <div class="container text-center">
                 <div class="row">
-                  <div class="col">
-                    <div class="card ca"id="p2roduct1">
-                        <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct1');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
-                        <img src="https://i.pinimg.com/736x/af/cd/4f/afcd4fc23cabf931b9970f94d41ebc15.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">A warm and woody scent with saffron, amber, and cedar.</p><span class="price">10.00$</span>
-                        </div>
-                      </div>
-                  </div>
+                  
                   <div class="col">
                     <div class="card ca"id="p2roduct2">
-                        <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct2');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
+                        
                         <img src="https://i.pinimg.com/736x/81/5c/ce/815ccec0229283f0462708262ac334a2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text"> A smoky and woody fragrance with sandalwood, cedar, and cardamom.</p><span class="price">10.00$</span>
+                          <p class="card-text"><span class="naame">santal 33</span>
+                            Geraniol, Limonene, Linalool, Citral, Tocopherol, <br>
+                            What SANTAL 33 is... An open fire... The soft drift of smoke... <br> Where sensuality rises after the light has gone.</p>
+                          <span class="price">10.00$</span>
+                          <button class="addtc" id="myButton"onclick="addToCart(); adDToCart('p2roduct2');">add to cart</button>
                         </div>
                       </div>
                   </div>
                   <div class="col">
-                    <div class="card ca"id="p2roduct3">
-                        <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct3');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
+                    <div class="card ca rev"id="p2roduct3">
+                        
                         <img src="https://i.pinimg.com/564x/c4/20/96/c42096df15496f79853635aa00c2edb1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text"> A fresh and aromatic scent with bergamot, juniper berries, and vanilla.</p><span class="price">10.00$</span>
+                          <p class="card-text"> <span class="naame">Gypsy Water</span>
+                            Bergamot, Juniper Berries, Pepper <br>
+                            An ode to the beauty of Romani culture, its unique customs, <br> intimate beliefs and distinguished way of living.</p>
+                          <span class="price">10.00$</span>
+                          <button class="addtc" id="myButton"onclick="addToCart(); adDToCart('p2roduct3');">add to cart</button>
                         </div>
                       </div>
                   </div>
                 
                     <div class="col">
                         <div class="card ca"id="p2roduct4">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct4');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
+                           
                             <img src="https://i.pinimg.com/564x/2b/dd/02/2bdd025ff675adebdb268775a8adcdc5.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">A citrusy and fresh fragrance with neroli, bergamot, and orange blossom.</p><span class="price">10.00$</span>
+                              <p class="card-text"><span class="naame">Neroli Portofino </span>
+                                crisp citrus oils, floral notes, amber undertones <br>
+                                Transportive and invigorating, Neroli Portofino captures <br> the cool breezes, sparkling waters and lush foliage of the Italian Riviera.</p>
+                              <span class="price">10.00$</span>
+                              <button class="addtc" id="myButton"onclick="addToCart(); adDToCart('p2roduct4');">add to cart</button>
                             </div>
                           </div>
                     </div>
+                    
                     <div class="col">
-                        <div class="card ca"id="p2roduct5">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct5');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
-                            <img src="https://i.pinimg.com/564x/77/93/50/7793501fbfb764da5f72d60bc4e29e6a.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">A green and woody scent with fig leaves, fig tree, and cedar.</p><span class="price">10.00$</span>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card ca"id="p2roduct6">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct6');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
-                            <img src="https://i.pinimg.com/564x/ef/4a/6e/ef4a6e400fa0f23908b707ff46249fc1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text"> A fresh and earthy fragrance with ambrette seed and sea salt.</p><span class="price">10.00$</span>
-                            </div>
-                          </div>
-                    </div>
-                  
-                    <div class="col">
-                        <div class="card ca"id="p2roduct7">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct7');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
-                            <img src="https://i.pinimg.com/564x/f2/26/7a/f2267ad7c90a8c14654f4a06c2ddd1e4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">A fruity and floral scent with green mango, lotus, and sycamore.</p><span class="price">10.00$</span>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <div class="card ca"id="p2roduct8">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct8');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
+                        <div class="card ca rev"id="p2roduct8">
+                            
                             <img src="https://i.pinimg.com/564x/72/eb/f9/72ebf98ddac0c2d7634b996bd8661c4f.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">A classic citrus fragrance with lemon, sweet orange, and lavender.</p><span class="price">10.00$</span>
+                              <p class="card-text"><span class="naame">Colonia</span>
+                                Lavender, Rose, Verbena, Rosemary <br>
+                                Colonia is the emblematic Acqua di Parma Eau de Cologne that symbolises Italianity, <br> capturing the dynamic spirit of a modern, metropolitan lifestyle.</p>
+                              <span class="price">10.00$</span>
+                              <button class="addtc" id="myButton"onclick="addToCart(); adDToCart('p2roduct8');">add to cart</button>
                             </div>
                           </div>
                     </div>
                     <div class="col">
                         <div class="card ca"id="p2roduct9">
-                            <div class="heart ha"><button id="myButton"onclick="addToCart(); adDToCart('p2roduct9');"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                          <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                        </svg></button></div>
+                            
                             <img src="https://i.pinimg.com/736x/4a/d4/3a/4ad43a74e0e69d30a3561b5301915f8e.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">A fruity and woody scent with pineapple, grapefruit, and cedar.</p><span class="price">10.00$</span>
+                              <p class="card-text"><span class="naame">HACIVAT</span>
+                                jasmine - patchouli - cedarwood <br>
+                                Is a tribute to elegance, kindness, competence, and love of art. <br> Inspired by the traditional shadow play character, <br> this eau chypre will help you live in your best dreams</p>
+                              <span class="price">10.00$</span>
+                              <button class="addtc" id="myButton"onclick="addToCart(); adDToCart('p2roduct9');">add to cart</button>
                             </div>
                           </div>
                     </div>

@@ -10,8 +10,15 @@ body{
     height: 70px;
     border-radius: 100%;
 }
-#nav{
-    background-color:#654d3f;
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #654d3f; /* Background color */
+   /* color: white;  Text color */
+    transition: top 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
 }
 .navList{
     list-style-type: disclosure-closed;
@@ -43,6 +50,8 @@ body{
 }
 #cont{
     background-color: #fcfcf4;
+    padding-top: 85px;
+    
 
 }
 #foot{
@@ -75,4 +84,42 @@ body{
     border-radius: 50%;
     padding: 3px 7px;
     font-size: 10px;
+}
+
+.dm{
+    background: none;
+    border: none;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+}
+.cl{
+    background: none;
+    border: none;
+}
+
+
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    /* Light text color */
+}
+
+body.dark-mode #cont {
+    background-color: #1e1e1e; /* Darker content background */
+}
+body.dark-mode .row {
+    background-color: #1e1e1e; /* Darker content background */
+}
+body.dark-mode .offcanvas {
+    background-color: #1e1e1e; /* Darker content background */
+}
+
+body.dark-mode #foot {
+    background-color: #1e1e1e; /* Darker footer background */
+}
+
+body.dark-mode #foot,body.dark-mode #foot a,body.dark-mode .bi,body.dark-mode .offcanvas,body.dark-mode .cl {
+    color:#efefe6; /* Darker travel button */
 }
